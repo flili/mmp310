@@ -7,7 +7,7 @@ h1,h2 {
 	margin:0;
     text-align: center;
     color: black;
-    font-family: "lobster two";
+    font: 18px/1.25em Helvetica, Arial, Sans-serif;
 }
 form{
     margin-top: 20px;
@@ -28,4 +28,43 @@ li{
     border: black;
     background: white;
 }
+input{
+    margin-right: 10px;
+    flex-grow: 2;
+}
+input,button {
+    color: black;
+    box-sizing: border-box;
+    font-size: 1.25em;
+    padding: 14px;
+}
+ul {
+		background: #fff;
+}
+button,input {
+		font: 18px/1.25em Helvetica, Arial, Sans-serif;
+    border: none;
+    background: lightgrey;
+}
+li{
+    font: 18px/1.25em Helvetica, Arial, Sans-serif;
+    margin-left: 35%;
+    margin-right: 40%;
+    margin-top: 1%;
+    border-bottom: 1px solid grey;
+}
 
+#todoForm {
+    margin-left, margin-right: 20%;
+		display: block;
+		position: relative;
+		padding: 14px 40px 14px 14px;
+		border-bottom: 1px solid black;
+}
+    
+#add{
+    background: red;
+    margin-left: -20px;
+    color: white;
+    font: 18px/1.25em Helvetica, Arial, Sans-serif;
+}
