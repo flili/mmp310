@@ -1,4 +1,5 @@
 
+
 function todoList() {
 	var item    = document.getElementById('tdInput').value
 	var text    = document.createTextNode(item)
@@ -6,4 +7,5 @@ function todoList() {
 
 	newItem.appendChild(text)
 	document.getElementById('tdList').appendChild(newItem)
+
 }

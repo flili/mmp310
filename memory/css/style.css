@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #330066;
+    text-align: center;
+}
+#game {
+    text-align: center;
+    margin-top: 10px;
+	width: 600px;
+	margin:0 auto;
+}
+
+.card {
+    width:100px;
+	height:100px;
+	display:block;
+    float: left;
+    margin-top: 30px;
+    border-radius: 15%;
+	background-color: brown;
+	margin-left: 15px;
+    margin-right: 15px;
+	box-sizing: border-box;
+    cursor: pointer;
+    position: relative;
+}
+.card img {
+    transition: ease-in opacity 10s;
+	width:100%;
+	height:100%;
+    border-radius: 15%;
+}
+h1, h2{
+    text-align: center;
+    color: white;
+    font-family: 'Yantramanav', sans-serif;
+}
+h1{
+    font-weight: 900;
+    font-size: 4em;
+    margin: 0;
+    padding: 0;
+}
+h2{
+    font-weight: 100;
+    font-size: 2em;
+    margin: 0;
+}
+#query{
+    text-align:center;
+    margin-left: 10px;
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 100;
+    font-size: .8em;
+    border: none;
+    background: white;
+    color: black;
+}
+p{
+    font-family: 'Yantramanav', sans-serif;
+    color:white;
+    text-align: center;
+    margin: 0;
+}
+.card{
+    transition:all 1s ease;
+    /* Don't forget the vendor specific pre-fixes! */
+}
+
+.card:target {
+    color:red;
+    font-size:40px
+}
+.card:active{
+-webkit-transform: rotateX(180deg);
+        transform: rotateX(180deg);
+}

@@ -1,0 +1,43 @@
+#container {
+    width: 600px;
+    margin: 0 auto;
+    background-color: lightgray;
+    padding: 1em;
+}
+
+.message {
+    padding: 1em;
+    border: 1px solid blue;
+    border-radius: 0.5em;
+    background-color: white;
+    font-family: monospace;
+}
+
+.message .text {
+    font-size: 2em;
+}
+
+.message .user{
+    color: grey;
+}
+.add-message{
+    margin-top: 1em;
+    padding: 1em;
+    background-color: lightblue;
+    border: 1px solid blue;
+    border-radius: 0.5em;
+}
+
+.add-message input{
+    border:none;
+    font-size: 2em;
+    border-bottom: 1px solid transparent;
+}
+.add-message input:focus{
+    outline:none;
+    border-bottom: 1px solid blue;
+    
+}
+.add-message button{
+    
+}
