@@ -71,12 +71,13 @@ $(document).ready(function() {
 						});
 					}
                         //Flip
-                        $('.card img').on('click', function() {
-                            $(this).toggleClass('clicked');
-                            });            
+                                  
 
+                        //Timer
                     
-				});
+                    
+                        
+                });
 					
 			});
 		}

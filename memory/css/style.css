@@ -73,6 +73,6 @@ p{
     font-size:40px
 }
 .card:active{
--webkit-transform: rotateX(180deg);
-        transform: rotateX(180deg);
+-webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
 }
