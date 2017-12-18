@@ -1,5 +1,5 @@
 .bd{
-    background-image: url(../images/red.jpg);
+    background-image: url(../img/red.jpeg);
     background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -41,22 +41,31 @@ p{
 .intro{
     font-size: 1.5em;
 }
+
+/*-- NAVEGATION STYLING --*/
 nav{
     display:inline;
-    padding-top: 1%;
+    background-color: #212121;
+    height: 7%;
 }
 nav li{
-    display: inline-block;
+    display: inline;
     list-style-type: none;
-    margin-right: 2%;
-
+    margin-right: 12%;
+    margin-top: 30%;
+    cursor: pointer;
 }
 nav a{
-    color: cadetblue;
+    color: #cd3333;
     text-decoration: none;
     font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
     font-size: 1.5em;
     text-align: center;
+}
+nav ul{
+    padding-bottom: 2%;
+    height:1%;
 }
  nav a:hover {
     text-decoration: none;
@@ -66,5 +75,27 @@ nav a{
 a:hover {
     text-decoration: none;
     color: cyan;
+    transition:  color 1s ease-in-out;
+}
+.dropdown-menu.show{
+    position: absolute;
+    transform: translate3d(100px, -354px, 0px);
+    top: 0px;
+    left: 0px;
+    will-change: transform;
+    padding-left: 20px;
+    width: 600px;
+    background-color: #212121;
+    border: none;
+}
+.dropdown-menu li{
+    display: inline-block;
+    list-style-type: none;
+    margin-top: 1%;
+    margin-right: 0%;
+}
+.dropdown-menu li a:hover{
+    text-decoration: none;
+    color: white;
     transition:  color 1s ease-in-out;
 }

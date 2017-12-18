@@ -1,48 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MMP 210 Classwork</title>
-    <link rel="stylesheet" href="../css/style.css" type="text/css">
-    <!-- Bootstrap -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/style.css" type="text/css">
-    <!-- Google Fonts -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<!--TITLE OF THE PAGE-->
+    <title>WEEK3 - Assignment 3: Quiz Program. </title>
+    <link rel="stylesheet" href="css/style.css">
+<!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-    <script src="../p5.min.js"></script>
-    <script src="js/sketch.js"></script>
 </head>
-<body>
-    <!-- Navegation Bar Bottom -->
-   <nav class="navbar navbar-inverse navbar-fixed-bottom">
+<body class="bd">
+   
+<!-- Navegation Bar Bottom -->
+   <nav class="navbar fixed-bottom navbar-light">
     <ul>
         <li><a href="../index.html">Home</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Assignments<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-<!-- Assignment List -->
-            <li><a href="../assignment1/index.html">Assignment 1: Self-portrait</a></li>
-            <li><a href="../assignment2/index.html">Assignment 2: Free Draw</a></li>
-            <li><a href="../assignment3/index.html">Assignment 3: Logo Name</a></li>
-             
-          </ul>
-        </li>
     </ul>
   </nav>
-<!--END of navegation-->    
-    <div id="container">
-       <h1>Assignment 2: Free Draw</h1>
-        <h2>Fane Li Li</h2>
+<!--END OF NAVEGATION-->
+ 
+ <!-- PROJECT DESCRIPTION -->
+   <h1>Assignment 3: Quiz Progam</h1>
+   <div class="col-md-12 text-center"> 
+    <button type="button" class="btn btn-primary " data-toggle="collapse" data-target="#des">Project description.</button>
+    <div  id="des" class="collapse">
+     <ul>
+      <li>Make a quiz with a least three questions</li>
+      <li>Use <code class="highlighter-rouge">input</code> or <code class="highlighter-rouge">select</code> for user input</li>
+      <li>Use logic to verify user answers and display feedback</li>
+      <li>Count the total number correct and display results</li>
+      <li>Extra Credit: Use images as response choices for user</li>
+      <li>Extra Credit: Give hints to user on wrong response</li>
+    </ul>
+       </div>
     </div>
-    <div id="quiz"></div>
-<button id="submit">Get Results</button>
-<div id="results"></div>
+<!-- END  DESCRIPTION -->   
+  
+<!-- START  PROJECT -->
+  <body>
+      <div id="quiz">
+         <h2 class="quiz">Take a Quiz!</h2>
+                <div>
+                    <p class="question">1. Quiz question #1</p>
 
-    <!-- Script -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+                    <ul>
+                    <input class="answer" type="radio" name="q1" value="1">
+                    <label id="correctString1">correct answer 1</label>
+                    <br>
+                    <input class="answer" type="radio" name="q1" value="0">
+                    <label>wrong answer</label>
+                    <br>
+                    <input class="answer" type="radio" name="q1" value="0">
+                    <label>wrong answer</label>
+                    <br>
+                    <input class="answer" type="radio" name="q1" value="0">
+                    <label>wrong answer</label>
+                    </ul>
+                </div>
+                <div>
+                    <p class="question">2. Quiz question #2</p>
+
+                    <ul>
+                    <input class="answer" type="radio" name="q2" value="0">
+                    <label>wrong answer</label>
+                    <br>
+                    <input class="answer" type="radio" name="q2" value="1">
+                    <label id="correctString2">correct answer 2</label>
+                    <br>
+                    <input class="answer" type="radio" name="q2" value="0">
+                    <label>wrong answer</label>
+                    <br>
+                    <input class="answer" type="radio" name="q2" value="0">
+                    <label>wrong answer</label>
+                    </ul>
+                </div>
+                <div>
+                    <p class="question">3. Quiz question #3</p>
+
+                    <ul>
+                    <input class="answer" type="radio" name="q3" value="0">
+                    <label>wrong answer</label>
+                    <br>
+                    <input class="answer" type="radio" name="q3" value="1">
+                    <label id="correctString3">correct answer 3</label>
+                    <br>
+                    <input class="answer" type="radio" name="q3" value="0">
+                    <label>wrong answer</label>
+                    <br>
+                    <input class="answer" type="radio" name="q3" value="0">
+                    <label>wrong answer</label>
+                    </ul>
+                </div>
+                <div>
+                    <p class="question">4. Quiz question #4</p>
+
+                    <ul>
+                    <input class="answer" type="radio" name="q4" value="0">
+                    <label>wrong answer</label>
+                    <br>
+                    <input class="answer" type="radio" name="q4" value="1">
+                    <label id="correctString4">correct answer 4</label>
+                    <br>
+                    <input class="answer" type="radio" name="q4" value="0">
+                    <label>wrong answer</label>
+                    <br>
+                    <input class="answer" type="radio" name="q4" value="0">
+                    <label>wrong answer</label>
+                    </ul>
+                </div>
+        <br/>
+          <div class="submitter">
+                  <input class="quizSubmit" id="submitButton" onClick="submitQuiz()"
+                  type="submit" value="Submit" />
+            </div>
+
+        <!--show only wrong answers on submit-->
+            <div class="quizAnswers" id="correctAnswer1"></div>
+                <div class="quizAnswers" id="correctAnswer2"></div>
+            <div class="quizAnswers" id="correctAnswer3"></div>
+            <div class="quizAnswers" id="correctAnswer4"></div>
+
+        <!--show score upon submit-->
+            <div>
+                <h2 class="quizScore" id="userScore"></h2>
+            </div>
+    </div>
+
+  
+
+<!-- END  PROJECT -->   
+   
+
+
+   
+   
+   
+<!-- SCRIPT -->
+    <script src="../p5.min.js"></script>
+    <script src="js/sketch.js"></script>
+<!-- BOOTSTRAP JAVASCRIPT -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+       
+
 </body>
 </html>

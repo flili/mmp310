@@ -1,42 +1,90 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-	<title>User Input</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<!--TITLE OF THE PAGE-->
+    <title>WEEK2 - Assignment 2: Madlibs (Input & data storage with variables)</title>
+    <link rel="stylesheet" href="css/style.css">
+<!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
 </head>
-<body id="home">
-    <h1>Please fill out the spaces.</h1>
-    
-    <p>What is your name? <input class="input" id="name" type="text" placeholder="Input user name"></p>
-    <p>What is your favorite animal?<input class="input" id="animal" type="text" placeholder="Input animal"></p>
-    <p>What is your favorite color? <input class="input" id="color" type="text" placeholder="Input color"></p>
-    
-	<p>Please choose a location: <select class="input" id="location">
+<body class="bd">
+   
+<!-- Navegation Bar Bottom -->
+   <nav class="navbar fixed-bottom navbar-light">
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+    </ul>
+  </nav>
+<!--END OF NAVEGATION-->
+ 
+ <!-- PROJECT DESCRIPTION -->
+   <h1>Assignment 2: Madlibs</h1>
+   <div class="col-md-12 text-center"> 
+    <button type="button" class="btn btn-primary " data-toggle="collapse" data-target="#des">Project description.</button>
+    <div  id="des" class="collapse">
+     <ul>
+      <li><a href="https://en.wikipedia.org/wiki/Mad_Libs">Madlibs</a></li>
+      <li>Create a program that takes information from a user and creates a response that tells a story about that user</li>
+      <li>The information is usually used in unexpected ways</li>
+      <li>Use text input or select menus</li>
+      <li>Use HTML inputs to get user information</li>
+      <li>Save the information using JavaScript</li>
+      <li>Give the user a response that shows their information has been captured</li>
+      <li>Add a stylesheet with original styling for the form</li>
+    </ul>
+       </div>
+    </div>
+<!-- END  DESCRIPTION -->   
+  
+<!-- START  PROJECT -->
+<div class="form" id="madlibs">
+    <h1>Madlibs Game</h1>
+    <p>1. Type a random name: <input class="answer" id="Rname" placeholder="Input random name"></p>
+    <p>2. Please choose a location: <select class="answer"  id="location">
         <option>Select</option>
-		<option>House</option>
-		<option>Park</option>
-		<option>School</option>
-		<option>Mall</option>
-		<option>Beach</option>
-	</select></p>
-    
-    <p>Please choose a vehicule: <select class="input" id="vehicle">
+        <option>House</option>
+        <option>Park</option>
+        <option>Street</option>
+        <option>School</option>
+        <option>Mall</option>
+        <option>Beach</option>
+        </select></p>
+    <p>3. What is your favorite animal? <input class="answer"  id="animal" placeholder="Input animal"></p>
+    <p>4. What is your favorite color? <input class="answer" id="color" placeholder="Input color"></p>
+    <p>5. Mention any object: <input class="answer"  id="object" placeholder="Input object"></p>
+    <p>6. Please choose a form of transportation: <select class="answer" id="transp">
         <option>Select</option>
 		<option>Car</option>
 		<option>Bike</option>
 		<option>Plane</option>
 		<option>Skateboard</option>
-		<option>Motocycle</option>
-	</select></p>
-    <p>Mention any object: <input class="input" id="object" placeholder="Input object"></p>
+        <option>Motocycle</option>
+    </select></p>
     
-    
-	<button id="submit">submit</button>
-    <p id="story"></p>
-    
+    <button id="submit">Reveal story.</button>
+    </div>
+    <p id="message"></p>
+   <!-- END  PROJECT -->   
+   
+
+
+   
+   
+   
+<!-- SCRIPT -->
     <script src="../p5.min.js"></script>
-    <script src="sketch.js"></script>
+    <script src="js/sketch.js"></script>
+<!-- BOOTSTRAP JAVASCRIPT -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+       
+
 </body>
 </html>

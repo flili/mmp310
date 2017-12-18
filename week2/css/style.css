@@ -1,49 +1,117 @@
-body {
-	font-size: 14px;
-	background: gray;
-	color: cornflowerblue
+@import url('https://fonts.googleapis.com/css?family=Yantramanav');
+
+html, body {
+  height: 100%;
 }
-#home {
-	color: black;
-	background-color: antiquewhite;
-	font-size: 1.5em;
-    font-family: "lora";
+body{
+    font-family: 'Yantramanav', sans-serif;
+    background-color: #333;
+    margin: 0;
+    padding-top: 2%;
+    padding-bottom: 20%;
+/* This centers our sketch horizontally. */
+  justify-content: center;
+/* This centers our sketch vertically. */
+  align-items: center;
 }
-a {
-	color: aliceblue;
-	transition: color 500ms;
+
+.collapse{
+    color: aliceblue;
+}
+/*-- NAVEGATION STYLING --*/
+nav{
+    display:inline;
+    background-color: #212121;
+    height: 7%;
+}
+nav li{
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 2%;
+    margin-top: 30%;
+
+}
+nav a{
+    color: #cd3333;
+    text-decoration: none;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    text-align: center;
+}
+nav a:hover {
+    text-decoration: none;
+    color: white;
+    transition:  color 1s ease-in-out;
 }
 a:hover {
-	color: darkgoldenrod;
+    text-decoration: none;
+    color: cyan;
+    transition:  color 1s ease-in-out;
 }
-a:active {
-	color: fuchsia;
+#des ul{
+    background-color: white;
+    color: #333;
+    text-align: left;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 15px;
 }
-/*
-a:visited {
-	color: forestgreen;
+.btn-primary {
+    color: #fff;
+    background-color: #cd3333;
+    border-color: #cd3333;
 }
-*/
-h1 {
-	margin:0;
+.btn-primary.focus, .btn-info:focus {
+    box-shadow: 0 0 0 0.2rem rgba(205,51,51,.5);
+}
+/*assignment position*/
+h1{
+    font-weight: 900;
     text-align: center;
-    text-decoration: underline;
-    color: navy;
+    color: wheat;
 }
-li {
-	border: 2px dotted;
-	margin: 0.25em 1em;
-	display:inline;
+p{
+    color: #b0b848;
+    font-size: 1.2em;
+    font-weight: 500;
 }
-p { position:relative; }
-img {
-	width: 100%;
-	/*height: 50%;*/
-	top: 100px;
-	position: fixed;
-	transition: all 1s;
+
+/*-page design look*/
+#madlibs{
+    padding-right: 25%;
+    padding-left: 25%;
+    margin-top: 5%;
+    text-align: left;
 }
-img:hover {
-	width:200%;
-	top: 1000px;
+#message{
+    padding-right: 25%;
+    padding-left: 25%;
+    margin-top: 2%;
+    margin-bottom: 10%;
+    text-align: left;
+    color: white;
+}
+.answer{
+    background-color: #333;
+    border:none;
+    border-bottom: 0.1em solid grey;
+    color: white;
+    margin-left: 2%;
+}
+#submit{
+    font-size: 1.2em;
+    font-family: 'Yantramanav', sans-serif;
+    text-align: center;
+    margin-left: 43%;
+    background-color: wheat;
+    border-radius: 5px;
+    color: #333;
+    font-weight: 500;
+    border: none;
+    padding: 8px;
+}
+#submit:hover{
+    color: white;
+    background-color: #b0b848;
 }
