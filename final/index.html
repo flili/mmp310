@@ -1,27 +1,65 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-	<title>MEMORY GAME</title>
-	<meta charset="utf-8">
-	<link href="css/style.css" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Yantramanav" rel="stylesheet">
-</head>
-<body>
-	<div id="container">
-		
-		<p>
-      City: <input id ="city" value="London">
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!--TITLE OF THE PAGE-->
+    <title>OpenWeatherMapAPI</title>
+<!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel=stylesheet href="css/style.css" type="text/css">
+<!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Yantramanav" rel="stylesheet">
+  </head>
+  <body class="bd">
+   <!-- Navegation Bar Bottom -->
+   <nav class="navbar fixed-bottom navbar-light">
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+    </ul>
+  </nav>
+<!--END OF NAVEGATION-->
+
+ <!-- PROJECT DESCRIPTION -->
+   <h1>FINAL API</h1>
+   <div class="col-md-12 text-center"> 
+    <button type="button" class="btn btn-primary " data-toggle="collapse" data-target="#des">Project description.</button>
+    <div  id="des" class="collapse">
+     <ul>
+      <li><a href="https://en.wikipedia.org/wiki/Mad_Libs">Madlibs</a></li>
+      <li>Create a program that takes information from a user and creates a response that tells a story about that user</li>
+      <li>The information is usually used in unexpected ways</li>
+      <li>Use text input or select menus</li>
+      <li>Use HTML inputs to get user information</li>
+      <li>Save the information using JavaScript</li>
+      <li>Give the user a response that shows their information has been captured</li>
+      <li>Add a stylesheet with original styling for the form</li>
+    </ul>
+       </div>
+    </div>
+<!-- END  DESCRIPTION -->  
+   
+<!-- START  PROJECT -->
+    <div id=weather-app>
+    <h1> Open Weather Map API</h1>
+    <p>
+      Location: <input id ="city" placeholder="Type a Country, City or Zip Code">
       <br/>
       <button id="submit">submit</button>
     </p>
-        
-	</div>
-	
-	
-	
+    <p>The temperature and humidity are using Celsius units</p>
+    </div>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="js/sketch.js"></script>
-</body>
+<!-- END  PROJECT -->  
+   
+<!--SCRIPT-->
+    <script src="js/sketch.js" type="text/javascript"></script>
+    <script src="libraries/p5.js" type="text/javascript"></script>
+
+    <script src="libraries/p5.dom.js" type="text/javascript"></script>
+    <script src="libraries/p5.sound.js" type="text/javascript"></script>
+
+    
+  </body>
 </html>
