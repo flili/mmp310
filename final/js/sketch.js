@@ -7,7 +7,7 @@ var units = '&units=metric';
 var input;
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(450, 400);
 
   var button = select('#submit');
   button.mousePressed(weatherAsk);
@@ -41,16 +41,16 @@ function draw() {
       textFont("Yantramanav");
       textSize(16);
       fill(tma);
-      text("Temperature max = "+ tempma, 45, 40);
+      text("Temperature max = "+ tempma, 35, 40);
         rect(100, 100, tempma, tempma);
       fill(tmi);
       text("Temperature min = " + tempmi, 255, 40);
         rect(300, 100, tempmi, tempmi);
       fill(t);
       text("Temperature = "+ temp, 55, 220);
-        rect(100, 300, temp, temp);
+        rect(100, 255, temp, temp);
       fill(h);
       text("Humidity = " + hmdt, 255, 220);
-        rect(255, 255, hmdt, hmdt);
+        rect(285, 255, hmdt, hmdt);
   }
 }

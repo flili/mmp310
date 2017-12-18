@@ -82,7 +82,7 @@ body {
 canvas {
     vertical-align: top;
     text-align: center;
-    margin-left: 34.5%;
+    margin-left: 33%;
     margin-right: 34.5%;
     margin-bottom: 100px;
 }
@@ -104,6 +104,16 @@ h1{
     border-bottom: 0.03em solid  white;
     width: 270px;
     margin-left: 10px;
+}
+#city:active{
+    color: white;
+    text-decoration: none;
+    background-color: #333;
+    border: none;
+    border-bottom: 0.03em solid  white;
+    width: 270px;
+    margin-left: 10px;
+    
 }
 #submit{
     text-decoration: none;
